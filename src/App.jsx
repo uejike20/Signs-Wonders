@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import HomePage from '@/pages/HomePage';
 import ShopPage from '@/pages/ShopPage';
 import AboutPage from '@/pages/AboutPage';
+import newLogo from './main-logo.png'; // <-- ADDED THIS IMPORT
 
 const Preloader = () => (
   <motion.div
@@ -20,7 +21,7 @@ const Preloader = () => (
       transition={{ duration: 1, ease: [0.6, 0.01, -0.05, 0.95] }}
       alt="Signs and Wonders Logo"
       className="h-24 w-auto"
-      src="/main-logo.png"
+      src={newLogo} // <-- CHANGED THIS LINE
     />
     <motion.div
       initial={{ opacity: 0, y: 20 }}
