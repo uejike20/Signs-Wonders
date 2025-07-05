@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from "@/components/ui/use-toast";
+import newLogo from '../main-logo.png'; // <-- ADDED THIS IMPORT
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ const Header = () => {
             <motion.img 
               alt="Signs and Wonders Logo" 
               className="h-16 w-auto" 
-              src="/main-logo.png"
+              src={newLogo} // <-- CHANGED THIS LINE
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
