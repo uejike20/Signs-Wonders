@@ -20,7 +20,7 @@ const Preloader = () => (
       transition={{ duration: 1, ease: [0.6, 0.01, -0.05, 0.95] }}
       alt="Signs and Wonders Logo"
       className="h-24 w-auto"
-      src="https://storage.googleapis.com/hostinger-horizons-assets-prod/0728ab6f-a315-4b37-9fe6-d45e205f3ba5/cacd900ffd34229e4fa4287c13b18a9e.webp"
+      src="/main-logo.png"
     />
     <motion.div
       initial={{ opacity: 0, y: 20 }}
