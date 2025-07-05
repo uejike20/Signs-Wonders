@@ -190,6 +190,9 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+    // --- THIS IS THE LINE I ADDED ---
+    base: '/Signs-Wonders/',
+
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
