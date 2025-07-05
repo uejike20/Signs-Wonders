@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div className="md:col-span-1 flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img alt="Signs and Wonders Logo" className="h-12 w-auto" src="https://storage.googleapis.com/hostinger-horizons-assets-prod/0728ab6f-a315-4b37-9fe6-d45e205f3ba5/cacd900ffd34229e4fa4287c13b18a9e.webp" />
+              <img alt="Signs and Wonders Logo" className="h-12 w-auto" src="/main-logo.png" />
             </Link>
             <p className="text-sm text-muted-foreground">Wearing our Faith on our sleeves & with our full chest.</p>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Signs and Wonders. All Rights Reserved.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Signs and Wonders. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
