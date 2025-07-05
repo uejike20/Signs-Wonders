@@ -53,7 +53,7 @@ const Header = () => {
             <motion.img 
               alt="Signs and Wonders Logo" 
               className="h-16 w-auto" 
-              src="https://storage.googleapis.com/hostinger-horizons-assets-prod/0728ab6f-a315-4b37-9fe6-d45e205f3ba5/cacd900ffd34229e4fa4287c13b18a9e.webp"
+              src="/main-logo.png"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
