@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
+import newLogo from '../main-logo.png'; // <-- ADDED THIS IMPORT
 
 const Footer = () => {
   const { toast } = useToast();
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div className="md:col-span-1 flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img alt="Signs and Wonders Logo" className="h-12 w-auto" src="/main-logo.png" />
+              <img alt="Signs and Wonders Logo" className="h-12 w-auto" src={newLogo} /> 
             </Link>
             <p className="text-sm text-muted-foreground">Wearing our Faith on our sleeves & with our full chest.</p>
           </div>
